@@ -6,6 +6,7 @@ import woman from './assets/images/woman.jpeg';
 import { motion } from "framer-motion";
 import training from './assets/images/training.jpeg';
 import ReserveSpot from './components/reserve-spot'
+import TextCard from './components/text-card';
 
 import './index.css'
 function App() {
@@ -58,32 +59,12 @@ function App() {
       <Title title="JOIN THE " titletwo="‎ COMMUNITY" />
 
       <div className='border-b-1 flex flex-row bg-[#E9ECFF] '>
-        <div className='flex flex-col flex-1'>
-          <div className='flex p-10 border-t-1 h-[200px]'>
-            <div className=' w-[400px]'>
-              <span className='text-[40px] font-[inter] font-bold'>DISCOVER YOUR POTENCIAL</span>
-            </div>
-          </div>
-          <div className='flex align-center justify-center flex-col p-10 border-t-1 h-[200px]'>
-            <span className='font-[inter] text-[20px] font-bold'>EXPERT COACHING</span>
-            <span className='font-[geist] text-[15px]'>Trainers who are passionate about your progress.</span>
-          </div>
-          <div className='justify-center align-center flex flex-col p-10 border-t-1 h-[200px]'>
-            <span className='font-[inter] text-[20px] font-bold'>RESULTS-DRIVEN PROGRAMS</span>
-            <span className='font-[geist] text-[15px]'>
-                Workouts that deliver tangible, measurable results.</span>
-          </div>
-          <div className='justify-center align-center flex flex-col p-10 border-t-1 h-[200px]'>
-            <span className='font-[inter] text-[20px] font-bold'>A SUPPORTIVE TRIBE</span>
-            <span className='font-[geist] text-[15px]'>
-                A community that pushes you to be your best.</span>
-          </div>
-                    <div className='justify-center align-center flex flex-col p-10 border-t-1 h-[200px]'>
-            <span className='font-[inter] text-[20px] font-bold'>A SUPPORTIVE TRIBE</span>
-            <span className='font-[geist] text-[15px]'>
-                A community that pushes you to be your best.</span>
-          </div>
-
+        <div className='flex flex-col align-center justify-center flex-1'>
+          <TextCard isFirst title='DISCOVER YOUR POTENTIAL' />
+          <TextCard title='EXPERT COACHING' subtitle='Trainers who are passionate about your progress.'/>
+          <TextCard title='RESULTS DRIVEN PROGRAMS' subtitle='Workouts that deliver tangible, measurable results.'></TextCard>
+          <TextCard title='A SUPPORTIVE TRIBE' subtitle='A community that pushes you to be your best.'></TextCard>
+          <TextCard  isLast />
         </div>
         <motion.img className='w-[1250px]  shrink-1 ' src={training}/>
       </div>

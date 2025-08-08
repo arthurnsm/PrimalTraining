@@ -1,3 +1,5 @@
+
+
 function ReserveSpot() {
   return (
     <div className="flex h-130 justify-center flex-col items-center bg-[#808CFD] p-10">
