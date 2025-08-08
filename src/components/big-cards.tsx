@@ -6,7 +6,7 @@ interface TextProps {
 
 function BigCards({ title, subtitle, isFirst = false }: TextProps) {
     return (
-        <div className='flex md:border-l-1 border-b-1 md:w-[30%] flex-col justify-between '>
+        <div className='flex md:border-l-1  md:w-[30%] flex-col justify-between '>
             <div className="flex flex-col  justify-between p-4 md:p-8 bg-[#E9ECFF]  h-[100%]">
                 <div className='flex flex-col  justify-between h-[100%]'>
                     <span className='gap-[60px] text-2xl md:text-5xl  font-bold '>

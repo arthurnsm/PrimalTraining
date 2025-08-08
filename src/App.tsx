@@ -17,11 +17,11 @@ function App() {
     <>
       <Header />
       <Title title="Train Hard. " titletwo="live Better" />
-      <div className='flex flex-col md:flex-row border-t-1 bg-[#E9ECFF]'>
+      <div className='flex flex-col border-t-1 md:flex-row bg-[#E9ECFF]'>
         <motion.img src={main} alt="Main" className='md:w-[70%]' />
         <BigCards isFirst title="FOR THE COMMITTED" subtitle="Train like an athlete with top-tier equipment and expert programming. Whether you're building muscle or breaking PRs, we help you push past limits." />
       </div>
-      <div className="flex flex-col-reverse md:flex-row bg-[#E9ECFF] md:border-t md:justify-between">
+      <div className="flex flex-col-reverse md:flex-row bg-[#E9ECFF]  md:border md:justify-between">
   <BigCards
     title="DYNAMIC OPEN GYM"
     subtitle="Our facility is the optimal environment for strength training and performance, fully equipped with top-of-the-line tools, ample training areas, and a focus on functional movement."
@@ -42,7 +42,7 @@ function App() {
 </div>
       <Title title="JOIN THE " titletwo="COMMUNITY" />
 
-      <div className='border-b-1 flex flex-col md:flex-row bg-[#E9ECFF] '>
+      <div className='flex flex-col  md:flex-row bg-[#E9ECFF] '>
         <div className='flex flex-col justify-center flex-1 align-center'>
           <TextCard isFirst title='DISCOVER YOUR POTENTIAL' />
           <TextCard title='EXPERT COACHING' subtitle='Trainers who are passionate about your progress.' />
