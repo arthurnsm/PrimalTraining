@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header className="sticky top-0 z-50 shadow-sm bg-[#E9ECFF] flex justify-between items-center h-[80px] px-4 w-full border-b">
+    <header className="sticky top-0 z-50 shadow-sm bg-[#E9ECFF] flex justify-between items-center h-[50px] md:h-[80px] px-4 w-full border-b">
       <h1 className="font-instrument font-bold text-[20px] md:text-[22px] tracking-[-0.075em]">PrimalTraining</h1>
 
       {/* Mobile: esconde os botões. Desktop: mostra */}

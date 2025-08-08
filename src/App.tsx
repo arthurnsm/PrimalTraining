@@ -17,22 +17,32 @@ function App() {
     <>
       <Header />
       <Title title="Train Hard. " titletwo="live Better" />
-      <div className='flex border-t-1 bg-[#E9ECFF]'>
-        <motion.img src={main} alt="Main" className='w-[70%]' />
+      <div className='flex flex-col md:flex-row border-t-1 bg-[#E9ECFF]'>
+        <motion.img src={main} alt="Main" className='md:w-[70%]' />
         <BigCards isFirst title="FOR THE COMMITTED" subtitle="Train like an athlete with top-tier equipment and expert programming. Whether you're building muscle or breaking PRs, we help you push past limits." />
       </div>
-      <div className='flex bg-[#E9ECFF] border-1 justify-between'>
-        <BigCards title="DYNAMIC OPEN GYM" subtitle="Our facility is the optimal environment for strength training and performance, fully equipped with top-of-the-line tools, ample training areas, and a focus on functional movement." />
-        <BigCards title="GUIDED BY EXPERTS" subtitle="Our facility is the optimal environment for strength training and performance, fully equipped with top-of-the-line tools, ample training areas, and a focus on functional movement." />
-        <motion.img src={woman} alt="Woman" className='w-[30%]'
-          initial={{ filter: "grayscale(100%)" }}
-          whileInView={{ filter: "grayscale(0%)" }}
-          transition={{ duration: 1.0 }}
-          viewport={{ once: true, amount: 0.9 }} />
-      </div>
+      <div className="flex flex-col-reverse md:flex-row bg-[#E9ECFF] md:border-t md:justify-between">
+  <BigCards
+    title="DYNAMIC OPEN GYM"
+    subtitle="Our facility is the optimal environment for strength training and performance, fully equipped with top-of-the-line tools, ample training areas, and a focus on functional movement."
+  />
+  <BigCards
+    title="GUIDED BY EXPERTS"
+    subtitle="Our facility is the optimal environment for strength training and performance, fully equipped with top-of-the-line tools, ample training areas, and a focus on functional movement."
+  />
+  <motion.img
+    src={woman}
+    alt="Woman"
+    className="w-full md:w-[30%] mb-6 md:mb-0 self-center"
+    initial={{ filter: "grayscale(100%)" }}
+    whileInView={{ filter: "grayscale(0%)" }}
+    transition={{ duration: 1.0 }}
+    viewport={{ once: true, amount: 0.9 }}
+  />
+</div>
       <Title title="JOIN THE " titletwo="COMMUNITY" />
 
-      <div className='border-b-1 flex flex-row bg-[#E9ECFF] '>
+      <div className='border-b-1 flex flex-col md:flex-row bg-[#E9ECFF] '>
         <div className='flex flex-col justify-center flex-1 align-center'>
           <TextCard isFirst title='DISCOVER YOUR POTENTIAL' />
           <TextCard title='EXPERT COACHING' subtitle='Trainers who are passionate about your progress.' />
@@ -40,7 +50,7 @@ function App() {
           <TextCard title='A SUPPORTIVE TRIBE' subtitle='A community that pushes you to be your best.'></TextCard>
           <TextCard isLast />
         </div>
-        <motion.img className='w-[65%]  shrink-1 ' src={training} />
+        <motion.img className='md:w-[65%]  shrink-1 ' src={training} />
       </div>
       <ReserveSpot color="#808CFD" title="WHAT WE BELIEVE IN" subtitle="JOIN THE PRIMAL TRIBE TODAY!" />
       <Footer />
