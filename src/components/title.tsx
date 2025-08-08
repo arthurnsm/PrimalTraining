@@ -4,12 +4,12 @@
     }   
 
 
-function Title (props: TitleProps) {
+function Title ({title, titletwo}: TitleProps) {
     return (
     
-    <section className="flex flex-row ms-6">
-        <span className='font-anek uppercase font-[1000] text-[100px]'>{props.title}</span>
-        <span className='font-anek uppercase font-[1000] text-[100px] text-[#808DFD]'> {props.titletwo}</span>
+    <section className="flex flex-row ms-6 ">
+        <span className='font-anek uppercase font-[1000] md:text-[100px] text-[25px]'>{title}</span>
+        <span className='md:ml-4 ml-2 font-anek uppercase font-[1000] md:text-[100px] text-[25px] text-[#808DFD]'>{titletwo}</span>
     </section>
     )
 }

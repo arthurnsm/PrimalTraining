@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import training from './assets/images/training.jpeg';
 import ReserveSpot from './components/reserve-spot'
 import TextCard from './components/text-card';
+import BigCards from './components/big-cards';
 
 import './index.css'
 function App() {
@@ -15,60 +16,33 @@ function App() {
   return (
     <>
       <Header />
-      <Title title="Train Hard." titletwo="Live Better" />
+      <Title title="Train Hard. " titletwo="live Better" />
       <div className='flex border-t-1 bg-[#E9ECFF]'>
-      <img src={main} alt="Main" className='w-[1300px]' />
-      <div className='flex flex-col justify-between m-[20px]'>
-        <span className='gap-[60px] text-5xl  font-[700]'>FOR THE COMMITTED</span>
-        <div className='w-[400px] mb-[80px]'>
-          <span className='font-[geist] whitespace-pre-wrap'>
-            Train like an athlete with top-tier equipment and
-            expert programming. Whether you're building
-            muscle or breaking PRs, we help you push past limits.
-          </span>
-          <button className='bg-[#E9ECFF] border-2 border-[#4B4B4B] text-[#4B4B4B] py-2 hover:cursor-pointer hover:bg-black hover:text-white transition mt-[20px] px-4 rounded-md'>ABOUT US</button>
-        </div>
+        <motion.img src={main} alt="Main" className='w-[70%]' />
+        <BigCards isFirst title="FOR THE COMMITTED" subtitle="Train like an athlete with top-tier equipment and expert programming. Whether you're building muscle or breaking PRs, we help you push past limits." />
       </div>
+      <div className='flex bg-[#E9ECFF] border-1 justify-between'>
+        <BigCards title="DYNAMIC OPEN GYM" subtitle="Our facility is the optimal environment for strength training and performance, fully equipped with top-of-the-line tools, ample training areas, and a focus on functional movement." />
+        <BigCards title="GUIDED BY EXPERTS" subtitle="Our facility is the optimal environment for strength training and performance, fully equipped with top-of-the-line tools, ample training areas, and a focus on functional movement." />
+        <motion.img src={woman} alt="Woman" className='w-[30%]'
+          initial={{ filter: "grayscale(100%)" }}
+          whileInView={{ filter: "grayscale(0%)" }}
+          transition={{ duration: 1.0 }}
+          viewport={{ once: true, amount: 0.9 }} />
       </div>
-      <div className='flex bg-[#E9ECFF]  '>
-        <div className='flex flex-col justify-between border-r-1 p-8 bg-[#E9ECFF] border-b-1 w-3xl'>
-          <span className='font-bold font-anek text-[45px]'>GUIDED BY EXPERTS</span>
-          <div className='w-[400px] mb-15 '>
-            <span className='whitespace-pre-wrap font-[500] font-[geist] '>
-                We believe in creating a positive environment where you can thrive.
-                We're here to help you achieve your goals and unlock your full potential.</span>
-          </div>
-        </div>
-          <div className='flex flex-col justify-between p-8 bg-[#E9ECFF] border-b-1 w-3xl'>
-          <span className='font-bold font-anek text-[45px]'>DYNAMIC OPEN GYM</span>
-          <div className='w-[400px] mb-10 '>
-            <span className='whitespace-pre-wrap  font-[500] font-[geist] '>Our facility is the optimal environment for strength training and performance, 
-              fully equipped with top-of-the-line tools,
-              ample training areas, and a focus on functional movement.</span>
-          </div>
-        </div>
-
-        <motion.img src={woman} alt="Woman"  className='w-[606px]'
-        initial={{ filter: "grayscale(100%)"  }}
-        whileInView={{ filter: "grayscale(0%)" }}
-        transition={{ duration: 1.0 }}
-        viewport={{ once: true, amount: 0.9 }}
-         />
-         
-      </div>
-      <Title title="JOIN THE " titletwo="‎ COMMUNITY" />
+      <Title title="JOIN THE " titletwo="COMMUNITY" />
 
       <div className='border-b-1 flex flex-row bg-[#E9ECFF] '>
-        <div className='flex flex-col align-center justify-center flex-1'>
+        <div className='flex flex-col justify-center flex-1 align-center'>
           <TextCard isFirst title='DISCOVER YOUR POTENTIAL' />
-          <TextCard title='EXPERT COACHING' subtitle='Trainers who are passionate about your progress.'/>
+          <TextCard title='EXPERT COACHING' subtitle='Trainers who are passionate about your progress.' />
           <TextCard title='RESULTS DRIVEN PROGRAMS' subtitle='Workouts that deliver tangible, measurable results.'></TextCard>
           <TextCard title='A SUPPORTIVE TRIBE' subtitle='A community that pushes you to be your best.'></TextCard>
-          <TextCard  isLast />
+          <TextCard isLast />
         </div>
-        <motion.img className='w-[1250px]  shrink-1 ' src={training}/>
+        <motion.img className='w-[65%]  shrink-1 ' src={training} />
       </div>
-      <ReserveSpot />
+      <ReserveSpot color="#808CFD" title="WHAT WE BELIEVE IN" subtitle="JOIN THE PRIMAL TRIBE TODAY!" />
       <Footer />
 
     </>
