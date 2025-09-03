@@ -30,15 +30,7 @@ function App() {
     title="GUIDED BY EXPERTS"
     subtitle="Our facility is the optimal environment for strength training and performance, fully equipped with top-of-the-line tools, ample training areas, and a focus on functional movement."
   />
-  <motion.img
-    src={woman}
-    alt="Woman"
-    className="w-full md:w-[30%] mb-6 md:mb-0 self-center"
-    initial={{ filter: "grayscale(100%)" }}
-    whileInView={{ filter: "grayscale(0%)" }}
-    transition={{ duration: 1.0 }}
-    viewport={{ once: true, amount: 0.9 }}
-  />
+  <img src={woman} alt="Woman" className="w-full md:w-[30%] mb-6 md:mb-0 self-center" />
 </div>
       <Title title="JOIN THE " titletwo="COMMUNITY" />
 
@@ -52,7 +44,7 @@ function App() {
         </div>
         <motion.img className='md:w-[65%]  shrink-1 ' src={training} />
       </div>
-      <ReserveSpot color="#808CFD" title="WHAT WE BELIEVE IN" subtitle="JOIN THE PRIMAL TRIBE TODAY!" />
+      <ReserveSpot color="bg-[#808CFD]" title="WHAT WE BELIEVE IN" subtitle="JOIN THE PRIMAL TRIBE TODAY!" />
       <Footer />
 
     </>

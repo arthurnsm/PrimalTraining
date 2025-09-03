@@ -1,7 +1,12 @@
+import Logo from '../assets/images/logo.png'
 function Header() {
   return (
     <header className="sticky md:sticky top-0 md:top-0  md:z-50 shadow-sm bg-[#E9ECFF] flex justify-between items-center h-[50px] md:h-[80px] px-4 w-full border-b">
-      <h1 className="font-instrument font-bold text-[20px] md:text-[22px] tracking-[-0.075em]">PrimalTraining</h1>
+      <div className='flex flex-row gap-2 align-center justify-center items-center'>
+        <img src={Logo} alt="Logo" className="md:h-6 h-4" />
+        <h1 className="font-instrument font-bold text-[20px] md:text-[22px] tracking-[-0.075em]">PrimalTraining</h1>
+
+      </div>
 
       <div className="hidden md:flex gap-[60px]">
         <button className="font-mono font-[400] text-[16px] hover:text-neutral-500 transition">HOME</button>
