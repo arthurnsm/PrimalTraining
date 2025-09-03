@@ -1,69 +1,42 @@
-# React + TypeScript + Vite
+# 🏋️‍♂️ Primal Training
+<img src="/src/assets/images/background-primal.png"> 
+O **Primal Training** é um projeto desenvolvido como uma cópia de uma página do [Figma](https://www.figma.com/community/file/1498113978492175844/performance-driven-gym), com foco em **boas práticas de desenvolvimento front-end** e **design responsivo**.  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Construído utilizando **React** e **TailwindCSS**, o projeto explora a componentização, utilização de **props** e adaptação de layouts para diferentes dispositivos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias utilizadas
+- ⚛️ [React](https://react.dev/) — Criação de componentes reutilizáveis e controle de props.  
+- 🎨 [TailwindCSS](https://tailwindcss.com/) — Estilização ágil e responsiva.  
+- 📱 **Design Responsivo** — Ajuste automático da interface para mobile, tablet e desktop.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Funcionalidades
+-  Cópia fiel de um design criado no **[Figma](https://www.figma.com/community/file/1498113978492175844/performance-driven-gym)**.  
+-  Estrutura baseada em **componentes reutilizáveis**.  
+-  Uso de **props** para tornar os componentes mais flexíveis.  
+-  Layout totalmente **responsivo**.
+-  **animações** ao decorrer da página.  
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📸 Preview
+<img src="/src/assets/images/preview.png"> 
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📂 Como rodar o projeto
+```bash
+# Clone este repositório
+git clone https://github.com/seu-usuario/primal-training.git
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Acesse a pasta do projeto
+cd primal-training
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Instale as dependências
+npm install
+
+# Rode a aplicação
+npm run dev
